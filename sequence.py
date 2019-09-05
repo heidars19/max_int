@@ -1,6 +1,13 @@
 # Generates sequence where it adds up the last 3 numbers of the sequence to make the next number.
 
-number1 = 1
-number2 = 2
-number3 = 3
+num1 = 0
+num2 = 0
+seq_num = 1
 
+for i in range(0,n) :
+    print(seq_num) 
+    num1 = num2
+    num2 = seq_num
+    seq_num = seq_num + num1 + num2
+    if seq_num == 1 :
+        seq_num += 1
